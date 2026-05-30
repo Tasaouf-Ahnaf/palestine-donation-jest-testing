@@ -1,0 +1,36 @@
+TC-01
+Input: amount = 0
+Expected Output: { success: false, message: "Invalid amount" }
+
+TC-02
+Input: amount = -100
+Expected Output: { success: false, message: "Invalid amount" }
+
+TC-03
+Input: amount = 100
+Expected Output: { success: true, message: "Payment accepted" }
+
+TC-04
+Input: amount = 150
+Expected Output: { success: true, message: "Payment accepted" }
+
+TC-05
+Input: amount = 99
+Expected Output: { success: false, message: "Payment rejected" }
+
+TC-06
+Input: amount = "abc"
+Expected Output: { success: false, message: "Invalid amount" }
+
+TC-07
+Input: amount = undefined
+Expected Output: { success: false, message: "Invalid amount" }
+
+TC-08
+Input: amount = null
+Expected Output: { success: false, message: "Invalid amount" }
+
+TC-09
+Input: amount = Number.MAX_SAFE_INTEGER
+Expected Output: { success: true, message: "Payment accepted" }
+
